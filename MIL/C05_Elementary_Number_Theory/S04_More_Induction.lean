@@ -226,8 +226,6 @@ example (n : ℕ): (fib n) ^ 2 + (fib (n + 1)) ^ 2 = fib (2 * n + 1) := by sorry
 example (n : ℕ): (fib n) ^ 2 + (fib (n + 1)) ^ 2 = fib (2 * n + 1) := by
   rw [two_mul, fib_add, pow_two, pow_two]
 BOTH: -/
-example (n : ℕ): (fib n) ^ 2 + (fib (n + 1)) ^ 2 = fib (2 * n + 1) := by
-  rw [two_mul, fib_add, pow_two, pow_two]
 
 /- TEXT:
 Lean's mechanisms for defining recursive functions are flexible enough to allow arbitrary
